@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 8vh;
+    background-color: fa7d09;
+    color: white;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    letter-spacing: 5px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BODY */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(206, 205, 203);
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* BODY - BANNER */ 
+
+#bannerr {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(173, 135, 78, 0.52), rgba(59, 40, 16, 0.73)), url('./images/barista-w-coffee.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    line-height: 150px;
+}
+
+div .banner h2 {
+    font-size: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 8px #111;
+    color: #e6e5e4;
+}
+
+div .banner h3 {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 8px #111;
+    color: #e6e5e4;
+    padding: 0px 80px;
+    line-height: 40px;
+}
+
+/* BODY - MENU */
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#menu-box {
+    display: flex;
+    border: solid #111;
+    color: #e6e5e4;
+    min-height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: #f7f4f1;
+    letter-spacing: 5px;
+    margin: 30px 0px;
+}
+
+.one {
+    background-image: url('./images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.two {
+    background-image: url('./images/2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.three {
+    background-image: url('./images/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.four {
+    background-image: url('./images/4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.five {
+    background-image: url('./images/5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.six {
+    background-image: url('./images/6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    #menu-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid #111;
+        color: #e6e5e4;
+        min-height: 250px;
+    }
+
+    .container h2 {
+        font-size: 50px;
+        margin: 10px 0px;
+    }
+}
+
+/* BODY - FORM */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-image: url('./images/formbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-left: 200px
+}
+
+textarea {
+    height: 150px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: #f0f0f0;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+
+.button {
+    width: 100px;
+    height: auto;
+    justify-self: center;
+}
+
+#form {
+    display: grid;
+    grid-gap: 20px;
+    width: 40%;
+    height: auto;
+}
+
